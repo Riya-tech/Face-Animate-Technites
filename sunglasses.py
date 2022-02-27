@@ -10,7 +10,7 @@ mpFace=mp.solutions.mediapipe.python.solutions.face_mesh
 face=mpFace.FaceMesh()
 drawSpec=mpDraw.DrawingSpec(thickness=1,circle_radius=1)
 
-img=cv2.imread("f1.jpg")
+img=cv2.imread("media/f1.jpg")
 eye1x,eye2x,eye1y,eye2y,x1,y1=0,0,0,0,0,0
 imgRGB=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
 result=face.process(imgRGB)
@@ -36,7 +36,7 @@ if(result.multi_face_landmarks):
                 y1=y;
 
                 
-glass=cv2.imread("glass1.png",cv2.IMREAD_UNCHANGED)
+glass=cv2.imread("media/glass1.png",cv2.IMREAD_UNCHANGED)
 
 x, y = int(x1)-int((x2-x1)/1.4), int(y1) 
 width=int((eye2x-eye1x)*1.8)

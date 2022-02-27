@@ -3,9 +3,9 @@ import cv2
 
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
-specsOri = cv2.imread('glass.png', -1)
-cigarOri = cv2.imread('cigar.png', -1)
-musOri = cv2.imread('mustache.png', -1)
+specsOri = cv2.imread('media/glass.png', -1)
+cigarOri = cv2.imread('media/cigar.png', -1)
+musOri = cv2.imread('media/mustache.png', -1)
 
 
 def transparentOverlay(src, overlay, pos=(0, 0), scale=1):
@@ -23,7 +23,7 @@ def transparentOverlay(src, overlay, pos=(0, 0), scale=1):
     return src
 
 
-img = cv2.imread("f2.jpg")
+img = cv2.imread("media/f2.jpg")
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 faces = face_cascade.detectMultiScale(img, 1.2, 5, 0, (120, 120), (350, 350))
 
