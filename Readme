@@ -1,1 +1,22 @@
-Face Animate project 
+# Face Animate project 
+
+Its a computer vision and open cv project which has face and image filter.
+those filter works on a video 
+
+# installation
+
+1. clone this repo oe download zip and unzip in a folder
+
+2. open command prompt in the respective folder.
+
+3. run below command to install all dependancies
+
+pip install -r requirements.txt
+
+4. then just run below command 
+
+python app.py
+
+4. open any web browser go to 
+
+http://127.0.0.1:5000/
